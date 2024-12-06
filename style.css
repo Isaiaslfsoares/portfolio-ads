@@ -1,0 +1,282 @@
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; 
+    color: #d3e68d; 
+    line-height: 1.8;
+}
+
+/* Header e Navegação */
+header {
+    background-color: #0b1f0f;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #a8c66c; 
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: #cfe69e; 
+}
+
+/* Index */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+#sobre {
+    max-width: 800px; 
+    text-align: justify; 
+}
+
+
+#sobre img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    display: block;
+    margin: 1rem auto;
+    border: 3px solid #a8c66c; 
+}
+
+/* Rodapé */
+footer {
+    background-color: #0b1f0f;
+    color: #d3e68d;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+#formacao {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+#formacao h1 {
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: #0b1f0f;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    color: var(--text-color);
+    text-align: left;
+}
+
+.card h2 {
+    color: #cfe69e; 
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.card a {
+    display: inline-block;
+    text-decoration: none;
+    color: #a8c66c;
+    font-weight: bold;
+    border: 2px solid #a8c66c;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.card a:hover {
+    background-color: #a8c66c;
+    color: #000;
+}
+
+/* Seção de Portfólio */
+#portfolio {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+#portfolio h1 {
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+
+.portfolio-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem; 
+    padding: 1rem;
+}
+
+.portfolio-card {
+    background-color: #0b1f0f; 
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.portfolio-card h2 {
+    color: #cfe69e;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.portfolio-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: #a8c66c; 
+    font-weight: bold;
+    border: 2px solid #a8c66c;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.portfolio-card a:hover {
+    background-color: #a8c66c;
+    color: #000;
+}
+
+/* Seção de Contato */
+#contato {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+#contato h1 {
+    color: #d3e68d;
+    margin-bottom: 2rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; 
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    background-color: #0b1f0f; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.icon:hover {
+    background-color: #a8c66c; 
+}
+
+/* Seção de Mensagem */
+#mensagem-sec {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+#mensagem-sec h1 {
+    color: #d3e68d;
+    margin-bottom: 2rem;
+}
+
+/* Formulário */
+#mensagem-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#mensagem-form label {
+    font-size: 1rem;
+    color: #d3e68d;
+    text-align: left;
+}
+
+#mensagem-form input,
+#mensagem-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #a8c66c; 
+    border-radius: 5px;
+    background-color: #0b1f0f; 
+    color: #d3e68d;
+    font-size: 1rem;
+}
+
+#mensagem-form input::placeholder,
+#mensagem-form textarea::placeholder {
+    color: #a8c66c; 
+    font-style: italic;
+}
+
+#mensagem-form button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #a8c66c; 
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#mensagem-form button:hover {
+    background-color: #d3e68d;
+    color: #000;
+}
